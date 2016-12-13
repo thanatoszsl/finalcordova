@@ -1,0 +1,173 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+/*Navigation*/
+/*From Tony's Pen*/
+
+[data-role="nav"] {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #AD9E95;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    width: 50%;
+}
+
+.tabs a {
+    display: block;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.tabs a:first-child {
+    border-right: 1px solid #333;
+}
+
+
+/*Navigation ends*/
+
+
+/* Start 2 page display */
+
+
+/*pages are not displayed*/
+
+[data-role="page"] {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+/*    display: block;*/
+    z-index: 10;
+    padding-bottom: 5rem;
+    /* to match the height of the nav bar */
+    padding-top: 4rem;
+    /* leaving space for the heading */
+}
+
+[data-role="page"].active{
+    display: block;
+/*    display: none;*/
+    z-index: 20;
+}
+
+/* End 2 page display */
+
+body {
+    background-color: #FFE9DB;
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+div #buttonRefresh{
+    border-radius: 5%;
+    border: 1px solid black;
+    display: block;
+    position: fixed;
+    z-index: 50;
+    background-color: #AD9E95;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.schduleList li{
+    list-style: none;
+    
+}
+
+.schduleList h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5rem;
+    border: 1px dashed #999;
+}
+
+.homeTm, .awayTm{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+#gameScores {
+    border-collapse: collapse;
+    border: 1px solid #666;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+#gameScores  th,
+#gameScores  td {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

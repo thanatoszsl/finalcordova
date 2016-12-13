@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://griffis.edumedia.ca 'unsafe-eval';connect-src http://griffis.edumedia.ca;">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Cordova App</title>
+</head>
+
+<body>
+    <!--   Schedule page-->
+    <div id="gameSchedule" class="page active" data-role="page">
+        <header>
+            <h1>Schedule</h1>     
+        </header>
+    <!--        make schedule list-->    
+        <ul class="schduleList">
+        </ul>
+    </div>
+    <!--    Scores page-->
+    <div id="scores" class="page" data-role="page">
+        <header>
+            <h1>Scores</h1> </header>
+        <!--        make a Table for scores-->
+        <table id="gameScores">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>T</th>
+                    <th>P</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- load the standings here after calculating them -->
+            </tbody>
+        </table>
+    </div>
+<!--   Refresh Button-->
+    <div class="button">
+        <a id="buttonRefresh" >Refrsh!</a>
+    </div>
+    <section data-role="nav" id="nav">
+        <ul class="tabs">
+            <li><a id="nav_schedule" href="#gameSchedule">Schedule</a></li>
+            <li><a id="nav_scores" href="#scores">Scores</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+
+</html>
+<!--based on tony's pen!!!!!!-->
